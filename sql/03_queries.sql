@@ -37,12 +37,12 @@ from total_receita
 cross join total_gasto;
 
 --Quanto gastei em cada categoria? 
-select c.id_categoria, sum(t.valor)
+select c.nome_categoria, sum(t.valor) as total
 from transacoes t 
 join categorias c on t.id_categoria = c.id_categoria
 where c.tipo = 'Despesa'
-group by c.id_categoria
-order by c.id_categoria;
+group by c.nome_categoria
+order by total desc;
 
 --Qual categoria gastou mais? 
 select c.nome_categoria, sum(t.valor) as total
@@ -95,7 +95,7 @@ limit 1;
 
 --Quanto da meta mensal foi utilizada?
 with meta_mensal as (
-	select to_char(mes, 'MM') as mes, sum(valor_meta) as total
+	select to_char(mes, 'MM') as mes, sum(valor_meta) as meta
 	from metas 
 	group by to_char(mes, 'MM')
 ),
@@ -108,7 +108,7 @@ gastos_mes as (
 	group by to_char(t.data, 'MM')
 )
 
-select m.mes, m.total, g.gasto, m.total - g.gasto as saldo_restante
+select m.mes, m.meta, g.gasto, m.meta - g.gasto as saldo_restante
 from meta_mensal m
 left join gastos_mes g on m.mes = g.mes
 order by mes;

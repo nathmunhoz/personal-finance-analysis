@@ -6,16 +6,19 @@
 
 ## Ferramentas Utilizadas
 
-* **Banco de Dados:** PostgreSQL & DBeaver
-* **Análise & Desenvolvimento:** Python
-* **Visualização de Dados:** Power BI
+* **Banco de Dados:** PostgreSQL
+* **Gerenciamento do Banco:** DBeaver
 * **Controle de Versão:** Git & GitHub
 
 ---
 
 ## Modelo do Banco de Dados
 
-Abaixo está a estrutura e o relacionamento das tabelas utilizadas no projeto:
+O banco de dados foi modelado utilizando três tabelas principais:
+
+- **Categorias:** classificação das receitas e despesas.
+- **Transações:** registro de todas as movimentações financeiras.
+- **Metas:** orçamento mensal definido para cada categoria.
 
 ![Modelo do Banco](img/modelo_banco.png)
 
@@ -23,10 +26,11 @@ Abaixo está a estrutura e o relacionamento das tabelas utilizadas no projeto:
 
 ## Consultas SQL
 
-### Top 5 Categorias com Maior Gasto
+### Gasto por categoria
+![alt text](img/gasto_categoria.png)
 
+### Saldo financeiro
+![alt text](img/saldo_financeiro.png)
 
-### Gasto Mensal
-
-
-### Categoria Mais Cara
+### Categorias que ultrapassaram a meta
+![alt text](img/categorias%20x%20metas.png)
