@@ -1,0 +1,12 @@
+"id_categoria","nome_categoria","tipo"
+1,Moradia,Despesa
+2,Alimentação,Despesa
+3,Transporte,Despesa
+4,Saúde,Despesa
+5,Educação,Despesa
+6,Lazer,Despesa
+7,Assinaturas,Despesa
+8,Outros,Despesa
+9,Bolsa Atleta,Receita
+10,Proventos,Receita
+11,Salário,Receita
