@@ -1,26 +1,32 @@
 # Análise de Finanças Pessoais
 
-## Este projeto simula o trabalho de uma consultora de dados contratada para analisar as finanças pessoais de um cliente. 
+> **Cenário:** Este projeto simula o trabalho de uma consultora de dados contratada para analisar as finanças pessoais de um cliente. O objetivo principal é identificar padrões de gastos, acompanhar metas financeiras e gerar insights acionáveis.
 
-O objetivo é identificar padrões de gastos, acompanhar metas financeiras e gerar insights por meio de SQL, Python e Power BI.
+---
 
-**Ferramentas utilizadas**
-- DBeaver
-- PostgreSQL
-- Git
-- GitHub
-...
+## Ferramentas Utilizadas
 
-**Modelo do banco**
-![alt text](img/modelo_banco.png)
+* **Banco de Dados:** PostgreSQL & DBeaver
+* **Análise & Desenvolvimento:** Python
+* **Visualização de Dados:** Power BI
+* **Controle de Versão:** Git & GitHub
 
-**Consultas SQL**
-Top 5 categorias com maior gasto
-...
+---
 
-Gasto mensal
-...
+## Modelo do Banco de Dados
 
-Categoria mais cara
-...
+Abaixo está a estrutura e o relacionamento das tabelas utilizadas no projeto:
 
+![Modelo do Banco](img/modelo_banco.png)
+
+---
+
+## Consultas SQL
+
+### Top 5 Categorias com Maior Gasto
+
+
+### Gasto Mensal
+
+
+### Categoria Mais Cara
