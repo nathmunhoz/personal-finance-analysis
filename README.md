@@ -58,6 +58,12 @@ O projeto também conta com um dashboard interativo para acompanhar os principai
 
 ![Dashboard de Finanças Pessoais](powerbi/dashboard.png)
 
+### DAX
+
+- Tabela _Measures criada exclusivamente para conter todas as measures criadas e usadas no dashboard.
+
+![Measures criadas](img/measures.png)
+
 ## Autora
 
 Projeto desenvolvido como parte da minha jornada de aprendizado em Análise de Dados.
